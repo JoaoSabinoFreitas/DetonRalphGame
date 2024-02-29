@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../images/wall.jpg);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    border-bottom:5px solid gold;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: solid black;
+    background-color: #7fffd4;
+}
+
+.enemy {
+    background-image: url('../images/Ralph.png');
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-time h2:nth-child(2), .menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: gold;
+    border-bottom: 3px solid gray;
+    box-shadow: 3px 3px 3px rgb(16, 5, 0);
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(241, 220, 99);
+}
+.btn:active {
+    box-shadow: 0 0 0 0 rgb(16, 5, 0);
+    transform: translate(3px, 3px);
+}
